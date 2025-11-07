@@ -16,7 +16,7 @@
 <body>
     <!-- Navbar -->
     <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary ms-1 me-3">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ms-1 me-3">
             <i class="fa-brands fa-instagram fa-2x"></i>
             <a class="navbar-brand" href="#"><strong>Instagram</strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -43,7 +43,7 @@
                                     <label for="message-text" class="col-form-label">Caption:</label>
                                     <textarea class="form-control" id="message-text"
                                         placeholder="Text the caption of you post here"></textarea>
-                                    <div class="mt-2">
+                                    <div class="modal-buttons">
                                         <button type="button" class="btn border-light-subtle col-2 "><i
                                                 class="fa-solid fa-camera"></i></button>
                                         <button type="button" class="btn border-light-subtle col-2 "><i
@@ -59,8 +59,8 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a class="ms-1 btn btn-secondary dropdown-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="ms-1 btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <i class="fa-solid fa-gear"></i>
                         </a>
 
@@ -74,234 +74,203 @@
                     </div>
                 </form>
             </div>
-    </div>
+        </div>
     </nav>
     <div class="pb-2 px-2">
         <div class="col-1 mx-auto justify-content-center d-flex my-1">
-
-            <ul class="nav nav-pills mb-1" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-grid-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-grid" type="button" role="tab" aria-controls="pills-grid"
-                        aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-column-tab" data-bs-toggle="pill" data-bs-target="#pills-column"
-                        type="button" role="tab" aria-controls="pills-column" aria-selected="false"><i
-                            class="fa-solid fa-bars"></i></button>
-                </li>
-            </ul>
-
+            <button type="button" class="btn"><i class="fa-solid fa-table-cells"></i></button>
+            <button type="button" class="btn"><i class="fa-solid fa-bars"></i></button>
         </div>
-        <div class="tab-content" id="pills-tabContent">
-            <div id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab" tabindex="0"
-                class="row g-2 tab-pane fade show active ">
-                <div class="col-4 "><img class="img-fluid" src="https://picsum.photos/id/1/800" alt=""></div>
-                <div class="col-4 "><img class="img-fluid" src="https://picsum.photos/id/10/800" alt=""></div>
-                <div class="col-4 "><img class="img-fluid" src="https://picsum.photos/id/100/800" alt=""></div>
-                <div class="col-4 "><img class="img-fluid" src="https://picsum.photos/id/2/800" alt=""></div>
-                <div class="col-4 "><img class="img-fluid" src="https://picsum.photos/id/20/800" alt=""></div>
-                <div class="col-4 "><img class="img-fluid" src="https://picsum.photos/id/200/800" alt=""></div>
-                <div class="col-4 "><img class="img-fluid" src="https://picsum.photos/id/34/800" alt=""></div>
-                <div class="col-4 "><img class="img-fluid" src="https://picsum.photos/id/87/800" alt=""></div>
-                <div class="col-4 "><img class="img-fluid" src="https://picsum.photos/id/23/800" alt=""></div>
-                <div class="col-4 "><img class="img-fluid" src="https://picsum.photos/id/964/800" alt=""></div>
-                <div class="col-4 "><img class="img-fluid" src="https://picsum.photos/id/363/800" alt=""></div>
-                <div class="col-4 "><img class="img-fluid" src="https://picsum.photos/id/233/800" alt=""></div>
+        <div id="columnMode" class="gap-3 d-grid">
+            <div class="card col-5 mx-auto">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>Me working on a park</h6>
+                            <p>01/100</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item p-0">
+                        <img class="img-fluid" src="https://picsum.photos/id/10/800" alt="">
+                    </li>
+                    <li class="list-group-item">
+                        <h6>204 Likes</h6>
+                        <p>This is an example of a description paragraph. We can see a random photo</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card col-5 mx-auto">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>Me working on a park</h6>
+                            <p>01/100</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item p-0">
+                        <img class="img-fluid" src="https://picsum.photos/id/100/800" alt="">
+                    </li>
+                    <li class="list-group-item">
+                        <h6>204 Likes</h6>
+                        <p>This is an example of a description paragraph. We can see a random photo</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card col-5 mx-auto">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>Me working on a park</h6>
+                            <p>01/100</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item p-0">
+                        <img class="img-fluid" src="https://picsum.photos/id/2/800" alt="">
+                    </li>
+                    <li class="list-group-item">
+                        <h6>204 Likes</h6>
+                        <p>This is an example of a description paragraph. We can see a random photo</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card col-5 mx-auto">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>Me working on a park</h6>
+                            <p>01/100</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item p-0">
+                        <img class="img-fluid" src="https://picsum.photos/id/20/800" alt="">
+                    </li>
+                    <li class="list-group-item">
+                        <h6>204 Likes</h6>
+                        <p>This is an example of a description paragraph. We can see a random photo</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card col-5 mx-auto">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>Me working on a park</h6>
+                            <p>01/100</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item p-0">
+                        <img class="img-fluid" src="https://picsum.photos/id/200/800" alt="">
+                    </li>
+                    <li class="list-group-item">
+                        <h6>204 Likes</h6>
+                        <p>This is an example of a description paragraph. We can see a random photo</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card col-5 mx-auto">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>Me working on a park</h6>
+                            <p>01/100</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item p-0">
+                        <img class="img-fluid" src="https://picsum.photos/id/34/800" alt="">
+                    </li>
+                    <li class="list-group-item">
+                        <h6>204 Likes</h6>
+                        <p>This is an example of a description paragraph. We can see a random photo</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card col-5 mx-auto">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>Me working on a park</h6>
+                            <p>01/100</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item p-0">
+                        <img class="img-fluid" src="https://picsum.photos/id/87/800" alt="">
+                    </li>
+                    <li class="list-group-item">
+                        <h6>204 Likes</h6>
+                        <p>This is an example of a description paragraph. We can see a random photo</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card col-5 mx-auto">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>Me working on a park</h6>
+                            <p>01/100</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item p-0">
+                        <img class="img-fluid" src="https://picsum.photos/id/23/800" alt="">
+                    </li>
+                    <li class="list-group-item">
+                        <h6>204 Likes</h6>
+                        <p>This is an example of a description paragraph. We can see a random photo</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card col-5 mx-auto">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>Me working on a park</h6>
+                            <p>01/100</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item p-0">
+                        <img class="img-fluid" src="https://picsum.photos/id/964/800" alt="">
+                    </li>
+                    <li class="list-group-item">
+                        <h6>204 Likes</h6>
+                        <p>This is an example of a description paragraph. We can see a random photo</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card col-5 mx-auto">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>Me working on a park</h6>
+                            <p>01/100</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item p-0">
+                        <img class="img-fluid" src="https://picsum.photos/id/363/800" alt="">
+                    </li>
+                    <li class="list-group-item">
+                        <h6>204 Likes</h6>
+                        <p>This is an example of a description paragraph. We can see a random photo</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card col-5 mx-auto">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <h6>Me working on a park</h6>
+                            <p>01/100</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item p-0">
+                        <img class="img-fluid" src="https://picsum.photos/id/233/800" alt="">
+                        
+                    </li>
+                    <li class="list-group-item">
+                        <h6>204 Likes</h6>
+                        <p>This is an example of a description paragraph. We can see a random photo</p>
+                    </li>
+                </ul>
             </div>
 
-            <div id="pills-column" role="tabpanel" aria-labelledby="pills-column-tab" tabindex="0"
-                class="gap-3 d-grid tab-pane fade">
-                <div class="card col-5 mx-auto">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between">
-                                <h6>Me working on a park</h6>
-                                <p>01/100</p>
-                            </div>
-                        </li>
-                        <li class="list-group-item p-0">
-                            <img class="img-fluid" src="https://picsum.photos/id/10/800" alt="">
-                        </li>
-                        <li class="list-group-item">
-                            <h6>204 Likes</h6>
-                            <p>This is an example of a description paragraph. We can see a random photo</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card col-5 mx-auto">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between">
-                                <h6>Me working on a park</h6>
-                                <p>01/100</p>
-                            </div>
-                        </li>
-                        <li class="list-group-item p-0">
-                            <img class="img-fluid" src="https://picsum.photos/id/100/800" alt="">
-                        </li>
-                        <li class="list-group-item">
-                            <h6>204 Likes</h6>
-                            <p>This is an example of a description paragraph. We can see a random photo</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card col-5 mx-auto">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between">
-                                <h6>Me working on a park</h6>
-                                <p>01/100</p>
-                            </div>
-                        </li>
-                        <li class="list-group-item p-0">
-                            <img class="img-fluid" src="https://picsum.photos/id/2/800" alt="">
-                        </li>
-                        <li class="list-group-item">
-                            <h6>204 Likes</h6>
-                            <p>This is an example of a description paragraph. We can see a random photo</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card col-5 mx-auto">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between">
-                                <h6>Me working on a park</h6>
-                                <p>01/100</p>
-                            </div>
-                        </li>
-                        <li class="list-group-item p-0">
-                            <img class="img-fluid" src="https://picsum.photos/id/20/800" alt="">
-                        </li>
-                        <li class="list-group-item">
-                            <h6>204 Likes</h6>
-                            <p>This is an example of a description paragraph. We can see a random photo</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card col-5 mx-auto">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between">
-                                <h6>Me working on a park</h6>
-                                <p>01/100</p>
-                            </div>
-                        </li>
-                        <li class="list-group-item p-0">
-                            <img class="img-fluid" src="https://picsum.photos/id/200/800" alt="">
-                        </li>
-                        <li class="list-group-item">
-                            <h6>204 Likes</h6>
-                            <p>This is an example of a description paragraph. We can see a random photo</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card col-5 mx-auto">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between">
-                                <h6>Me working on a park</h6>
-                                <p>01/100</p>
-                            </div>
-                        </li>
-                        <li class="list-group-item p-0">
-                            <img class="img-fluid" src="https://picsum.photos/id/34/800" alt="">
-                        </li>
-                        <li class="list-group-item">
-                            <h6>204 Likes</h6>
-                            <p>This is an example of a description paragraph. We can see a random photo</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card col-5 mx-auto">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between">
-                                <h6>Me working on a park</h6>
-                                <p>01/100</p>
-                            </div>
-                        </li>
-                        <li class="list-group-item p-0">
-                            <img class="img-fluid" src="https://picsum.photos/id/87/800" alt="">
-                        </li>
-                        <li class="list-group-item">
-                            <h6>204 Likes</h6>
-                            <p>This is an example of a description paragraph. We can see a random photo</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card col-5 mx-auto">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between">
-                                <h6>Me working on a park</h6>
-                                <p>01/100</p>
-                            </div>
-                        </li>
-                        <li class="list-group-item p-0">
-                            <img class="img-fluid" src="https://picsum.photos/id/23/800" alt="">
-                        </li>
-                        <li class="list-group-item">
-                            <h6>204 Likes</h6>
-                            <p>This is an example of a description paragraph. We can see a random photo</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card col-5 mx-auto">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between">
-                                <h6>Me working on a park</h6>
-                                <p>01/100</p>
-                            </div>
-                        </li>
-                        <li class="list-group-item p-0">
-                            <img class="img-fluid" src="https://picsum.photos/id/964/800" alt="">
-                        </li>
-                        <li class="list-group-item">
-                            <h6>204 Likes</h6>
-                            <p>This is an example of a description paragraph. We can see a random photo</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card col-5 mx-auto">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between">
-                                <h6>Me working on a park</h6>
-                                <p>01/100</p>
-                            </div>
-                        </li>
-                        <li class="list-group-item p-0">
-                            <img class="img-fluid" src="https://picsum.photos/id/363/800" alt="">
-                        </li>
-                        <li class="list-group-item">
-                            <h6>204 Likes</h6>
-                            <p>This is an example of a description paragraph. We can see a random photo</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card col-5 mx-auto">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between">
-                                <h6>Me working on a park</h6>
-                                <p>01/100</p>
-                            </div>
-                        </li>
-                        <li class="list-group-item p-0">
-                            <img class="img-fluid" src="https://picsum.photos/id/233/800" alt="">
-
-                        </li>
-                        <li class="list-group-item">
-                            <h6>204 Likes</h6>
-                            <p>This is an example of a description paragraph. We can see a random photo</p>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
